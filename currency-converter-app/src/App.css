@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  font-family: "Montserrat", sans-serif;
+  background-image: url("./bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #030728;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  min-width: 400px;
+  padding: 30px 20px 50px;
+  color: white;
+  backdrop-filter: blur(30px);
+  background: rgba(2, 7, 40, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+h2 {
+  text-align: center;
+  font-weight: 600;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+  font-weight: 400;
+}
+.input-container input {
+  padding: 10px 0 10px 10px;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.from div,
+.to div {
+  display: flex;
+  gap: 2px;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  margin-top: 10px;
+  min-width: 120px;
+}
+.from div img,
+.to div img {
+  width: 25px;
+}
+.from div select,
+.to div select {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: white;
+  flex: 1;
+  cursor: pointer;
+}
+main .icon-container {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+main .icon {
+  font-size: 25px;
+}
+button {
+  width: 100%;
+  margin: 14px 0;
+  border: 0;
+  padding: 10px 0;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.converter {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+.loading {
+  opacity: 0.8;
+  pointer-events: none;
+}

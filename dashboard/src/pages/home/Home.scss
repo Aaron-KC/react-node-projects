@@ -1,0 +1,46 @@
+@import '../../styles/Variables.scss';
+@import '../../styles/responsive.scss';
+
+
+.home {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 180px);
+  padding: 5px 8px;
+  background-color: $main-bg;
+  width: 100%;
+  color: white;
+
+  @include xl {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include lg {
+    grid-template-columns: repeat(2, 1fr);  
+  }
+  @include md {
+    grid-template-columns: 1fr;
+  }
+  .box {
+    background-color: $main-bg;
+    grid-column: span 1;
+    box-sizing: border-box;
+    border: 2px solid $soft-bg;
+    margin: 10px;
+    border-radius: 8px;
+
+    &.box1, &.box4 {
+      grid-row: span 3;
+      overflow-y: scroll;
+    }
+    &.box1::-webkit-scrollbar {
+      display: none; 
+    }
+    &.box7 {
+      grid-column: span 2;
+      grid-row: span 2;
+      @include xl {
+        display: none;
+      }
+    }
+  }
+}

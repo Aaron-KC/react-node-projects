@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+.slider,
+.category,
+.product {
+  min-height: calc(100vh - 65px);
+  width: 100vw;
+}
+.product {
+  height: calc(100vh - 65px);
+}
+.left {
+  position: sticky;
+  top: 50px;
+  left: 30px;
+}
+.slider {
+  transition: all 1s ease;
+}

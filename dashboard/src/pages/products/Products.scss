@@ -1,0 +1,112 @@
+.products {
+  width: 100%;
+  height: 80vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .MuiBox-root {
+    background-color: white;
+    height: 100%;
+
+    .MuiDataGrid-toolbarContainer {
+      flex-direction: row-reverse;
+      padding: 10px;
+    }
+  }
+  .info {
+    display: flex;
+    gap: 10px;
+
+    button {
+      padding: 10px 12px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  .img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    img {
+      height: 30px;
+      width: 30px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  .verify {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 5px;
+
+    .link {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .add {
+    background-color: rgba(0,0,0,0.724);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .add-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color:  #2a3447;
+      padding: 30px 25px;
+      border-radius: 5px;
+      width: 400px;
+      position: relative;
+
+      .closeIcon {
+        position: absolute;
+        top: 30px;
+        right: 25px;
+        cursor: pointer;
+      }
+
+      .input-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 8px;
+        .input {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          input {
+            border: 1px solid white;
+            outline: 0;
+            padding: 8px 0 8px 8px;
+            background: transparent;
+            color: white;
+            border-radius: 4px;
+          }
+        }
+      }
+      button {
+        padding: 8px 0;
+        cursor: pointer;
+        margin-top: 8px;
+      }
+    }
+  }
+}

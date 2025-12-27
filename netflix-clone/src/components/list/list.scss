@@ -1,0 +1,126 @@
+.container {
+  padding: 10px 0px;
+  color: white;
+  h3 {
+    margin-bottom: 10px;
+    padding-left: 50px;
+  }
+
+  .content {
+    position: relative;
+    padding: 0 50px;
+    // overflow-x: auto;
+    // overflow-y: visible;
+
+      
+    .left {
+      position: absolute;
+      width: 50px;
+      height: 100px;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      z-index: 99;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .right {
+      position: absolute;
+      width: 50px;
+      height: 100px;
+      right: 0;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      z-index: 99;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    div {
+      display: flex;
+      flex-shrink: 0;
+      gap: 5px;
+      transition: all 0.5s ease;
+
+      .listitem {
+        height: 100px;
+        width: 220px;
+        background-color: white;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        background-color: var(--main-color);
+        transition: none;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+        &:hover {
+          height: 310px;
+          width: 320px;
+          position: absolute;
+          top: -155px;
+          z-index: 100;
+          border-radius: 8px;
+          img {
+            height: 125px;
+            display: none;
+          }
+          video {
+            height: 125px;
+            object-fit: cover;
+          }
+          .icons {
+            padding: 4px;
+            font-size: 30px;
+            
+
+            .icon {
+              border: 2px solid white;
+              padding: 5px;
+              border-radius: 50%;
+            }
+          }
+          .timestamps{
+            padding: 0px 4px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            span {
+              color: gray;
+              font-size: 14px;
+
+              &.age {
+                border: 1px solid gray;
+                padding: 1px 3px;
+                border-radius: 4px;
+              }
+            }
+          }
+          p{
+            padding:0 4px;
+            color: lightgray;
+          }
+          span {
+            padding: 7px 4px;
+            color: lightgray;
+          }
+
+        }
+      }
+    }
+  }
+  }
+
+

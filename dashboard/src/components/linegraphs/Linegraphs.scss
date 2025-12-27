@@ -1,0 +1,41 @@
+.linegraph {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 2;
+    height: 100%;
+
+    .info {
+      display: flex;
+      gap: 7px;
+      align-items: center;
+
+      span {
+        color: #ddd;
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: end;
+    .chart {
+      width: 100%;
+      height: 50%;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

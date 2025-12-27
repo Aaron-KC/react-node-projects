@@ -1,0 +1,17 @@
+@import '../../styles/Variables.scss';
+
+.footer {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $main-bg;
+
+  &:first-child {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  &:last-child {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,39 @@
+.piegraph {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  width: 100%;
+
+  div {
+    overflow: hidden;
+  }
+  .pie-info {
+    display: flex;
+    gap: 10px;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+    gap: 5px;
+
+    .item-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .color{
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+      }
+    }
+    .value {
+      padding-left: 8px;
+    }
+  }
+}

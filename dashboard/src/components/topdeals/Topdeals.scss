@@ -1,0 +1,41 @@
+@import '../../styles/Variables.scss';
+
+.top-deals {
+  padding: 10px 15px 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  h1 {
+    color: white;
+  }
+  .deal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+
+    .profile {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      img {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+       
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        span {
+          font-size: 12px;
+          color: $soft-color;
+        }
+      }
+    }
+  }
+}

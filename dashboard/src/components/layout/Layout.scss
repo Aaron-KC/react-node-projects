@@ -1,0 +1,15 @@
+@import '../../styles/Variables.scss';
+
+.main {
+  font-family: "Inter", sans-serif;
+  color: white;
+
+  .content {
+    display: flex;
+    gap: 15px;
+    background-color: $main-bg;
+  }
+  .sidebar-outer {
+    border-right: 2px solid $soft-bg;
+  }
+}

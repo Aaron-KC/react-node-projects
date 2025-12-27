@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="text"], input[type="email"], input[type="password"], textarea, input[type="number"], input[type="tel"] {
+  @apply py-1 px-3 rounded-full border border-gray-300 outline-none;
+}

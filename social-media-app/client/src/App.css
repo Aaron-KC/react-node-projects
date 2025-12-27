@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.7)), url('https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  background-size: cover;
+  background-position: center;
+}
+.leftbar, .rightbar {
+  height: calc(100vh - 50px);
+  position: sticky;
+  top: 50px;
+}
+.leftbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hr {
+  height: 0.5px;
+  background-color: lightgray;
+  width: 100%;
+}
